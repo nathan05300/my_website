@@ -21,6 +21,12 @@
         }
     
     .highlight-red { color: #e74c3c; }
+    
+    canvas {
+    background: black;
+    border: 3px solid #333;
+    margin-top: 10px;
+}
     </style>
 </head>
 
@@ -123,8 +129,34 @@
         從小我對籃球就十分熱愛，高中三年我參與了籃球社與籃球隊。在社團期間，我不僅鍛鍊了自己的身體、認識許多相同愛好的朋友，還參加了比賽。藉由一次次的訓練與比賽，我逐漸地<span class="highlight-red">鍛鍊自己的團隊合作、自信心、抗壓性、解決問題與自我要求</span>。
     </p>
     <img src="社團經驗.jpg" width="300" > 
+    </div>
+
+    <h2>HTML5課程中的JAVAScript小遊戲 </h2>
+   <script src="guess.js" defer></script>
+    <div class="section">
+    <h2>🎯 猜數字遊戲</h2>
+
+    <p>請輸入 1~100 的數字</p>
+
+    <input type="number" id="guessInput">
+    <button onclick="checkGuess()">猜！</button>
+
+    <p id="guessResult"></p>
+</div>
+
+<div class="section">
+    <script src="snake.js" defer></script>
+    <h2>🐍 貪吃蛇遊戲</h2>
+
+    <p>使用鍵盤方向鍵控制蛇</p>
+
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+
+    <p>分數：<span id="score">0</span></p>
+</div>
 
 
     
 </body>
+
 </html>
