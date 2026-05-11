@@ -132,27 +132,44 @@
     </div>
 
     <h2>HTML5課程中的JAVAScript小遊戲 </h2>
+
    <script src="guess.js" defer></script>
-    <div class="section">
+<div class="section">
+
     <h2>🎯 猜數字遊戲</h2>
 
-    <p>請輸入 1~100 的數字</p>
+    <p>請輸入 1 ~ 100 的數字</p>
 
-    <input type="number" id="guessInput">
+    <input type="number" id="guessInput" placeholder="輸入數字">
+
+    
     <button onclick="checkGuess()">猜！</button>
 
+    <button onclick="restartGame()">重新開始</button>
+
     <p id="guessResult"></p>
+
+    <p id="guessCount">猜測次數：0</p>
+
+    <h3>📊 猜測歷程（範圍變化）</h3>
+
+    <ul id="history"></ul>
 </div>
 
 <div class="section">
+    <h2>🐍 貪食蛇遊戲</h2>
     <script src="snake.js" defer></script>
-    <h2>🐍 貪吃蛇遊戲</h2>
-
-    <p>使用鍵盤方向鍵控制蛇</p>
+    <button onclick="startGame()">開始遊戲</button>
 
     <canvas id="gameCanvas" width="400" height="400"></canvas>
 
     <p>分數：<span id="score">0</span></p>
+
+    <p id="gameOverText"></p>
+
+    <button id="restartBtn" onclick="restartSnake()" style="display:none;">
+        重新開始
+    </button>
 </div>
 
 
